@@ -60,19 +60,19 @@ const experience = {
     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit earum harum culpa quidem.",
   items: [
     {
-      company: "Tech Solution Inc.",
-      position: "Full Stack Developer",
-      duration: "2022 - present",
+      company: "Huang He Consultancy Group",
+      position: "Web Developer",
+      duration: "Aug 2023 - Aug 2024",
     },
     {
-      company: "Web Design Studio",
-      position: "Front-End Developer Intern",
-      duration: "Summer 2021",
+      company: "PT GITS Indonesia",
+      position: "Data Analyst Mentee",
+      duration: "Aug 2023 - Dec 2023",
     },
     {
-      company: "E-commerce Startup",
-      position: "Back-End Developer Intern",
-      duration: "2020 - 2021",
+      company: "Asy-Syafa'at Indonesia Foundation",
+      position: "IT Support",
+      duration: "March 2023 - Dec 2023",
     },
     {
       company: "Tech Academy",
@@ -85,9 +85,9 @@ const experience = {
       duration: "2018 - 2019",
     },
     {
-      company: "Sotware Development Firm",
-      position: "Junior Developer",
-      duration: "2017 - 2018",
+      company: "Independent Student Exchange - Batch 2",
+      position: "Student",
+      duration: "Sept 2022 - Jan 2023",
     },
   ],
 };
@@ -101,13 +101,13 @@ const education = {
   items: [
     {
       institution: "SMA Negeri 10 Kota Bekasi",
-      degree: "Student",
-      duration: "2015",
+      degree: "Natural Sciences High School Graduate",
+      duration: "2017-2020",
     },
     {
       institution: "Universitas Yarsi",
-      degree: "Student",
-      duration: "2015",
+      degree: "Bachelor of Computer Science Graduate",
+      duration: "2020-2024",
     },
   ],
 };

@@ -1,5 +1,8 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
+import { useState, useEffect } from "react";
 
 // Components
 import Social from "@/components/Social";
@@ -7,8 +10,21 @@ import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
 
 const Home = () => {
+  const [pdfFilePath, setPdfFilePath] = useState(null);
+
+  useEffect(() => {
+    setPdfFilePath("/assets/aldhaf-cv.pdf");
+  }, []);
+
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = pdfFilePath;
+    link.download = "aldhaf_cv.pdf"; // Set the desired filename
+    link.click();
+  };
+
   return (
-    <section className="h-full">
+    <section className="h-full pb-20">
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
@@ -19,7 +35,7 @@ const Home = () => {
               <span className="text-accent">Aldhaf Fadlilah</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              excel at crafting digital experience and I am proficient in
+              I excel at crafting digital experience and I am proficient in
               various programming languages and technologies.
             </p>
             {/* button and socials*/}
@@ -28,6 +44,8 @@ const Home = () => {
                 variant="outline"
                 size="lg"
                 className="uppercase flex items-center gap-2"
+                onClick={handleDownload}
+                disabled={!pdfFilePath}
               >
                 <span>Download CV</span>
                 <FiDownload className="text-xl" />

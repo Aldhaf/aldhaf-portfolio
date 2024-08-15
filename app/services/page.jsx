@@ -39,8 +39,8 @@ import { Button } from "@/components/ui/button";
 
 const Services = () => {
   return (
-    <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0 mt-12">
-      <div className="container mx-auto">
+    <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0 mt-12 ">
+      <div className="container mx-auto pb-20">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{
