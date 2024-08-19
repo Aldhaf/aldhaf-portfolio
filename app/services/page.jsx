@@ -13,21 +13,21 @@ const services = [
   },
   {
     num: "02",
-    title: "UI/UX Design",
+    title: "Front-End Developer",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius odio vitae neque minima quasi sequi quis enim architecto suscipit distinctio sapiente beatae assumenda modi.",
     href: "",
   },
   {
     num: "03",
-    title: "Logo Design",
+    title: "Back-End Developer",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius odio vitae neque minima quasi sequi quis enim architecto suscipit distinctio sapiente beatae assumenda modi.",
     href: "",
   },
   {
     num: "04",
-    title: "SEO",
+    title: "Wordpress Developer",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius odio vitae neque minima quasi sequi quis enim architecto suscipit distinctio sapiente beatae assumenda modi.",
     href: "",
