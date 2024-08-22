@@ -57,7 +57,7 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
   description:
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit earum harum culpa quidem.",
+    "I am an Informatics Engineering graduate with over four years of experience in web development, data analysis, and IT support. I have extensive experience managing projects at PT GITS Indonesia and Huang He Consultancy Group, and I have a proven track record of improving online engagement and business prediction accuracy. I guarantee efficiency, innovation, and quality results in every project.",
   items: [
     {
       company: "Huang He Consultancy Group",
@@ -73,16 +73,6 @@ const experience = {
       company: "Asy-Syafa'at Indonesia Foundation",
       position: "IT Support",
       duration: "March 2023 - Dec 2023",
-    },
-    {
-      company: "Tech Academy",
-      position: "Teaching Assistant",
-      duration: "2019 - 2020",
-    },
-    {
-      company: "Digital Agency",
-      position: "UI/UX Designer",
-      duration: "2018 - 2019",
     },
     {
       company: "Independent Student Exchange - Batch 2",

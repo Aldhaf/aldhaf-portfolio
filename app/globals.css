@@ -4,8 +4,6 @@
 
 @layer utilities {
   .loading-loose {
-    /* Definisikan gaya khusus untuk loading-loose */ /* Contoh gaya */
-    /* Contoh gaya */
     padding: 5px;
   }
 }

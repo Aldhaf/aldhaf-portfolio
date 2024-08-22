@@ -6,31 +6,31 @@ import Link from "next/link";
 const services = [
   {
     num: "01",
-    title: "Web Development",
+    title: "Web and App Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius odio vitae neque minima quasi sequi quis enim architecto suscipit distinctio sapiente beatae assumenda modi.",
-    href: "",
+      "I am an experienced developer with a proven track record in creating simple Android applications and simple websites using HTML, CSS, and JavaScript. I have successfully managed over three website projects and consistently deliver innovative visual solutions that enhance the user experience.",
+    href: "https://github.com/Aldhaf",
   },
   {
     num: "02",
-    title: "Front-End Developer",
+    title: "Data Analyst",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius odio vitae neque minima quasi sequi quis enim architecto suscipit distinctio sapiente beatae assumenda modi.",
-    href: "",
+      "As a Data Analyst Mentee at PT GITS Indonesia, I have experience building data visualizations to analyze sales trends in MSMEs. My expertise in data analysis allows me to support better, data-driven decision making and provide valuable insights for business planning.",
+    href: "https://github.com/Aldhaf",
   },
   {
     num: "03",
-    title: "Back-End Developer",
+    title: "IT Support",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius odio vitae neque minima quasi sequi quis enim architecto suscipit distinctio sapiente beatae assumenda modi.",
-    href: "",
+      "I am a highly proficient IT professional with extensive experience in managing and maintaining complex IT infrastructure. I am skilled in troubleshooting hardware and software issues and ensuring the security of organizational data. I am an expert in providing direct technical support to teams and users, both for day-to-day issues and special projects. I am a skilled website developer and manager. I am adept at implementing efficient and responsive IT solutions that support the smooth operation of the entire organization.",
+    href: "https://github.com/Aldhaf",
   },
   {
     num: "04",
     title: "Wordpress Developer",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius odio vitae neque minima quasi sequi quis enim architecto suscipit distinctio sapiente beatae assumenda modi.",
-    href: "",
+      "I am a proficient website developer and manager, with expertise in WordPress and other no-code platforms. I have successfully managed over three website projects, including customizing themes and plugins to enhance functionality and user experience. I implement responsive design and attractive visuals. I have a proven ability to find innovative technical solutions to meet client needs and ensure optimal site performance.",
+    href: "https://github.com/Aldhaf",
   },
 ];
 
