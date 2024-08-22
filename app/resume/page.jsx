@@ -15,7 +15,7 @@ import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 const about = {
   title: "About Me",
   description:
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit earum harum culpa quidem.",
+    "I am an Informatics Engineering graduate with over four years of experience in web development, data analysis, and IT support. I have a proven track record of improving online engagement and business prediction accuracy. I guarantee efficiency, innovation, and quality results in every project.",
   info: [
     {
       fieldName: "Name",
@@ -27,7 +27,7 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "1+ Years",
+      fieldValue: "4+ Years",
     },
     {
       fieldName: "Address",
@@ -56,8 +56,7 @@ const about = {
 const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
-  description:
-    "I am an Informatics Engineering graduate with over four years of experience in web development, data analysis, and IT support. I have extensive experience managing projects at PT GITS Indonesia and Huang He Consultancy Group, and I have a proven track record of improving online engagement and business prediction accuracy. I guarantee efficiency, innovation, and quality results in every project.",
+  description: "",
   items: [
     {
       company: "Huang He Consultancy Group",
@@ -86,8 +85,7 @@ const experience = {
 const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
-  description:
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit earum harum culpa quidem.",
+  description: "",
   items: [
     {
       institution: "SMA Negeri 10 Kota Bekasi",
@@ -105,8 +103,7 @@ const education = {
 // skills data
 const skills = {
   title: "My skills",
-  description:
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit earum harum culpa quidem.",
+  description: "",
   skillList: [
     {
       icon: <FaHtml5 />,

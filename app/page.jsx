@@ -19,7 +19,7 @@ const Home = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = pdfFilePath;
-    link.download = "aldhaf_cv.pdf"; // Set the desired filename
+    link.download = "aldhaf-cv.pdf"; // Set the desired filename
     link.click();
   };
 
@@ -35,8 +35,11 @@ const Home = () => {
               <span className="text-accent">Aldhaf Fadlilah</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I excel at crafting digital experience and I am proficient in
-              various programming languages and technologies.
+              I have a proven track record in crafting digital experiences and
+              am highly proficient in a range of programming languages and
+              technologies. As a recent IT graduate, I bring a strong foundation
+              in software development and a passion for learning and adapting to
+              new challenges.
             </p>
             {/* button and socials*/}
             <div className="flex flex-col xl:flex-row items-center gap-8">

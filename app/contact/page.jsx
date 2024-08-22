@@ -53,9 +53,9 @@ const Contact = () => {
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
               <h3 className="text-4xl text-accent ">Let's work together</h3>
               <p className="text-white/60">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
-                atque dolores ipsam nemo eius error corrupti ipsa sit sequi,
-                veniam eos, esse sunt repellendus.
+                I am an experienced software development professional with
+                strong analytical and problem-solving skills. I am eager to
+                contribute and deliver the best results for your company!
               </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -72,9 +72,10 @@ const Contact = () => {
                 <SelectContent>
                   <SelectGroup>
                     <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value="est">Web Development</SelectItem>
-                    <SelectItem value="cst">UI/UX Design</SelectItem>
-                    <SelectItem value="mst">Logo Design</SelectItem>
+                    <SelectItem value="est">Web and App Development</SelectItem>
+                    <SelectItem value="cst">Data Analyst</SelectItem>
+                    <SelectItem value="mst">IT Support</SelectItem>
+                    <SelectItem value="wst">Wordpress Developer</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
