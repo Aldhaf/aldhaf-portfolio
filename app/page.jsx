@@ -39,7 +39,7 @@ const Home = () => {
               am highly proficient in a range of programming languages and
               technologies. As a recent IT graduate, I bring a strong foundation
               in software development and a passion for learning and adapting to
-              new challenges.
+              new challenges in any sector.
             </p>
             {/* button and socials*/}
             <div className="flex flex-col xl:flex-row items-center gap-8">
