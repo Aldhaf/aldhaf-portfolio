@@ -7,6 +7,7 @@ import {
   FaReact,
   FaWordpress,
   FaJava,
+  FaLaravel,
 } from "react-icons/fa";
 
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
@@ -15,7 +16,7 @@ import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 const about = {
   title: "About Me",
   description:
-    "I am an Informatics Engineering graduate with over four years of experience in web development, data analysis, and IT support. I have a proven track record of improving online engagement and business prediction accuracy. I guarantee efficiency, innovation, and quality results in every project.",
+    "I am an Informatics Engineering graduate with over four years of experience in web development and IT support. With a strong foundation in software development, IT Support and a passion for continuous learning. My expertise spans various programming languages and technologies, ensuring efficiency, innovation, and quality results in every project.",
   info: [
     {
       fieldName: "Name",
@@ -59,24 +60,19 @@ const experience = {
   description: "",
   items: [
     {
+      company: "PT Kreasi Arduo Indonesia",
+      position: "IT Support Specialist",
+      duration: "Sept 2022 - Jan 2023",
+    },
+    {
       company: "Huang He Consultancy Group",
       position: "Web Developer",
       duration: "Aug 2023 - Aug 2024",
     },
     {
-      company: "PT GITS Indonesia",
-      position: "Data Analyst Mentee",
-      duration: "Aug 2023 - Dec 2023",
-    },
-    {
       company: "Asy-Syafa'at Indonesia Foundation",
       position: "IT Support",
       duration: "March 2023 - Dec 2023",
-    },
-    {
-      company: "Independent Student Exchange - Batch 2",
-      position: "Student",
-      duration: "Sept 2022 - Jan 2023",
     },
   ],
 };
@@ -94,7 +90,7 @@ const education = {
     },
     {
       institution: "Universitas Yarsi",
-      degree: "Bachelor of Computer Science Graduate",
+      degree: "Bachelor of Informatics Engineering Graduate",
       duration: "2020-2024",
     },
   ],
@@ -132,6 +128,10 @@ const skills = {
     {
       icon: <FaJava />,
       name: "java",
+    },
+    {
+      icon: <FaLaravel />,
+      name: "laravel",
     },
   ],
 };
