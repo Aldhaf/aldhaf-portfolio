@@ -62,7 +62,7 @@ const experience = {
     {
       company: "PT Kreasi Arduo Indonesia",
       position: "IT Support Specialist",
-      duration: "Sept 2022 - Jan 2023",
+      duration: "Aug 2024 - Present",
     },
     {
       company: "Huang He Consultancy Group",
