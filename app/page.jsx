@@ -29,17 +29,14 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Software Developer & Technology Enthusiast</span>
+            <span className="text-xl">IT Support Specialist & Web Developer</span>
             <h1 className="h1 mb-6">
-              Hello i'm <br />{" "}
+              Hello I'm <br />{" "}
               <span className="text-accent">Aldhaf Fadlilah</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I have a proven track record in crafting digital experiences and
-              am highly proficient in a range of programming languages and
-              technologies. As a recent IT graduate, I bring a strong foundation
-              in software development and a passion for learning and adapting to
-              new challenges in any sector.
+              Bridging the gap between robust IT operations and modern software development.
+              I build scalable web applications while ensuring the infrastructure behind them runs seamlessly.
             </p>
             {/* button and socials*/}
             <div className="flex flex-col xl:flex-row items-center gap-8">

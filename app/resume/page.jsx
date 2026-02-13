@@ -8,6 +8,10 @@ import {
   FaWordpress,
   FaJava,
   FaLaravel,
+  FaPython,
+  FaLinux,
+  SiOdoo,
+  SiMysql,
 } from "react-icons/fa";
 
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
@@ -16,7 +20,7 @@ import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 const about = {
   title: "About Me",
   description:
-    "I am an Informatics Engineering graduate with over four years of experience in web development and IT support. With a strong foundation in software development, IT Support and a passion for continuous learning. My expertise spans various programming languages and technologies, ensuring efficiency, innovation, and quality results in every project.",
+    "Informatics Engineering graduate with a GPA of 3.84 and over 1.5 years of practical experience in IT operations and web development. Proven track record in managing enterprise infrastructure, including server administration (Linux/ Windows) and network optimization. Skilled in full-lifecycle web development, from UI/UX design (low-fi to hi-fi wireframing) to deployment using Laravel, WordPress, and Dorik. Enhanced by intensive 900-hour training in Data Analysis (Python, SQL) to drive data-informed technical solutions.",
   info: [
     {
       fieldName: "Name",
@@ -28,7 +32,7 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "4+ Years",
+      fieldValue: "1,5+ Years",
     },
     {
       fieldName: "Address",
@@ -70,9 +74,9 @@ const experience = {
       duration: "Aug 2023 - Aug 2024",
     },
     {
-      company: "Asy-Syafa'at Indonesia Foundation",
-      position: "IT Support",
-      duration: "March 2023 - Dec 2023",
+      company: "PT GITS Indonesia",
+      position: "IT Data Analyst (Indep. Study)",
+      duration: "Aug 2023 - Dec 2023",
     },
   ],
 };
@@ -132,6 +136,22 @@ const skills = {
     {
       icon: <FaLaravel />,
       name: "laravel",
+    },
+    {
+      icon: <SiMysql />,
+      name: "mysql",
+    },
+    {
+      icon: <FaPython />,
+      name: "python",
+    },
+    {
+      icon: <FaLinux />,
+      name: "linux",
+    },
+    {
+      icon: <SiOdoo />,
+      name: "odoo",
     },
   ],
 };
