@@ -10,8 +10,6 @@ import {
   FaLaravel,
   FaPython,
   FaLinux,
-  SiOdoo,
-  SiMysql,
 } from "react-icons/fa";
 
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
@@ -138,20 +136,12 @@ const skills = {
       name: "laravel",
     },
     {
-      icon: <SiMysql />,
-      name: "mysql",
-    },
-    {
       icon: <FaPython />,
       name: "python",
     },
     {
       icon: <FaLinux />,
       name: "linux",
-    },
-    {
-      icon: <SiOdoo />,
-      name: "odoo",
     },
   ],
 };
