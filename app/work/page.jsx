@@ -22,77 +22,61 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
-    title: "project 1",
+    category: "Fullstack (CMS)",
+    title: "Huang He Consultancy",
     description:
-      "This website is the last project of a group of 4 people from a training course that I took, specifically a bootcamp Website Development Course (Node.js) with the theme of an inviting coronavirus website. public break the spread of corona virus. This website uses HTML and CSS with javascript, Node.js and SQL back-end to store the database",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }],
-    image: "/assets/work/thumb1.png",
-    live: "",
-    github: "https://github.com/Aldhaf/C04_website",
-  },
-  {
-    num: "02",
-    category: "fullstack",
-    title: "project 2",
-    description:
-      "TendorNet website is the final project of a 4-member group web design and programming course with the topic internet provider website. This site uses PHP & CSS front-end and FULL REST API back-end with Postman and PHPMyAdmin to store database for data hosting and free hosting with localhost",
-    stack: [
-      { name: "PHP" },
-      { name: "Css 3" },
-      { name: "Bootsrap" },
-      { name: "MySQL" },
-    ],
-    image: "/assets/work/thumb2.png",
-    live: "",
-    github: "https://github.com/Aldhaf/TendorNet-Project",
-  },
-  {
-    num: "03",
-    category: "frontend",
-    title: "project 3",
-    description:
-      "Tendor Komputer application is the final project of the object-oriented programming course of a group of 4 members with the topic of selling computer components. This application uses Netbeans IDE with JAVA GUI front-end, store data using SQL phpmyadmin and java as logic",
-    stack: [{ name: "JAVA" }, { name: "MySQL" }],
-    image: "/assets/work/thumb3.png",
-    live: "",
-    github: "https://github.com/Aldhaf/tendor-komputer-project",
-  },
-  {
-    num: "04",
-    category: "fullstack",
-    title: "project 4",
-    description:
-      "This is a game education course project based on MBKM (Freedom Learns Independent Campus) program, specifically PMM (Free Student Exchange). For this project, I need to create educational applications such as quizzes, games, and websites. This application uses Netbeans IDE software with Java GUI as frontend and backend",
-    stack: [{ name: "Java" }],
-    image: "/assets/work/thumb4.png",
-    live: "",
-    github: "https://github.com/Aldhaf/GameEducation",
-  },
-  {
-    num: "05",
-    category: "fullstack",
-    title: "project 5",
-    description:
-      "HabitHero is the final project of the 2-member group Platform Programming course with the topic Habit Tracker. This app is built with Android Studio using Firebase (Firestore, Firebase Cloud Messaging, Firebase Authentication), Firebase Auth for login and registration, Firestore for data storage, Fire Cloud Messaging for displaying reminder messages",
-    stack: [{ name: "Kotlin" }, { name: "Firebase" }],
-    image: "/assets/work/thumb5.png",
-    live: "",
-    github: "https://github.com/Aldhaf/HabitHero",
-  },
-  {
-    num: "06",
-    category: "frontend",
-    title: "project 6",
-    description:
-      "Huang He Group is a Singapore-based consulting company that offers many services and is run by professionals. I created this website 100% using Wordpress with a process of about 1 month and during the work of this website I have researched many references so that this website is user friendly and can reach users.",
-    stack: [{ name: "Wordpress" }],
+      "A professional corporate website for a Singapore-based consultancy firm. Built entirely on WordPress to ensure easy content management for the client. Focused on SEO optimization, responsive design, and user-friendly navigation to increase client engagement.",
+    stack: [{ name: "WordPress" }, { name: "CSS3" }, { name: "PHP" }],
     image: "/assets/work/thumb6.png",
     live: "https://hhgrp.asia/",
     github: "",
   },
   {
-    num: "07",
+    num: "02",
+    category: "Frontend Dev",
+    title: "CovInfo Portal",
+    description:
+      "A public health dashboard designed to track Covid-19 vaccination rates and educate users about health protocols. Features real-time data visualization and a clean, accessible UI. Engineered using Node.js backend and a responsive frontend architecture.",
+    stack: [{ name: "HTML5" }, { name: "CSS3" }, { name: "Node.js" }, { name: "SQL" }],
+    image: "/assets/work/thumb1.png",
+    live: "",
+    github: "https://github.com/Aldhaf/C04_website",
+  },
+  {
+    num: "03",
+    category: "Mobile App",
+    title: "HabitHero Tracker",
+    description:
+      "An Android-based productivity application to help users build and track daily habits. Integrated with Firebase for real-time data syncing, authentication, and Cloud Messaging for push notifications/reminders.",
+    stack: [{ name: "Kotlin" }, { name: "Firebase" }, { name: "Android Studio" }],
+    image: "/assets/work/thumb5.png",
+    live: "",
+    github: "https://github.com/Aldhaf/HabitHero",
+  },
+  {
+    num: "04",
+    category: "Web Development",
+    title: "Adult Wellness Asia",
+    description:
+      "An event landing page for a large-scale exhibition in Singapore. developed using Dorik (No-code) to meet tight deadlines while maintaining a high-quality, elegant visual design. optimized for high traffic during ticket sales periods.",
+    stack: [{ name: "Dorik" }, { name: "UI/UX" }],
+    image: "/assets/work/thumb9.png",
+    live: "https://adultwellnessasia.com/",
+    github: "",
+  },
+  {
+    num: "05",
+    category: "Fullstack",
+    title: "TendorNet Dashboard",
+    description:
+      "A comprehensive ISP management dashboard designed to manage customer data and billing. Built with a robust PHP REST API backend and a responsive Bootstrap frontend. Includes database management via MySQL.",
+    stack: [{ name: "PHP" }, { name: "Bootstrap" }, { name: "MySQL" }],
+    image: "/assets/work/thumb2.png",
+    live: "",
+    github: "https://github.com/Aldhaf/TendorNet-Project",
+  },
+  {
+    num: "06",
     category: "frontend",
     title: "project 7",
     description:
@@ -103,7 +87,7 @@ const projects = [
     github: "",
   },
   {
-    num: "08",
+    num: "07",
     category: "frontend",
     title: "project 8",
     description:
@@ -111,17 +95,6 @@ const projects = [
     stack: [{ name: "Wordpress" }],
     image: "/assets/work/thumb8.png",
     live: "https://legatcyrecruitment.com",
-    github: "",
-  },
-  {
-    num: "09",
-    category: "frontend",
-    title: "project 9",
-    description:
-      "Adult Wellness Asia is an adult show program held by Huang He Group Company, with careful consideration by the company, this event was finally made sensual with an elegant concept held at the Singapore Expo. This website was created using Dorik (all-in-one no code website building platform) with about 3 months of work.",
-    stack: [{ name: "Dorik" }],
-    image: "/assets/work/thumb9.png",
-    live: "https://adultwellnessasia.com/",
     github: "",
   },
 ];

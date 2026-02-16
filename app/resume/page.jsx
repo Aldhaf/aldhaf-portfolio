@@ -10,48 +10,36 @@ import {
   FaLaravel,
   FaPython,
   FaLinux,
+  FaNodeJs,
+  FaDatabase, // General DB icon
 } from "react-icons/fa";
 
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { 
+  SiTailwindcss, 
+  SiNextdotjs, 
+  SiTypescript, 
+  SiMysql, 
+  SiTableau, 
+  SiOdoo, 
+  SiGooglelookerstudio,
+  SiGoogleappsscript,
+  SiDocker 
+} from "react-icons/si";
 
 //about data
 const about = {
   title: "About Me",
   description:
-    "Informatics Engineering graduate with a GPA of 3.84 and over 1.5 years of practical experience in IT operations and web development. Proven track record in managing enterprise infrastructure, including server administration (Linux/ Windows) and network optimization. Skilled in full-lifecycle web development, from UI/UX design (low-fi to hi-fi wireframing) to deployment using Laravel, WordPress, and Dorik. Enhanced by intensive 900-hour training in Data Analysis (Python, SQL) to drive data-informed technical solutions.",
+    "Informatics Engineering graduate with a GPA of 3.84 and over 1.5 years of professional experience. I bridge the gap between robust IT operations and modern software development, building scalable web apps while ensuring the infrastructure behind them runs seamlessly.",
   info: [
-    {
-      fieldName: "Name",
-      fieldValue: "Aldhaf Fadlilah",
-    },
-    {
-      fieldName: "Phone",
-      fieldValue: "(+62) 877 7930 7421",
-    },
-    {
-      fieldName: "Experience",
-      fieldValue: "1,5+ Years",
-    },
-    {
-      fieldName: "Address",
-      fieldValue: "Bekasi, West Java",
-    },
-    {
-      fieldName: "Nationality",
-      fieldValue: "Indonesia",
-    },
-    {
-      fieldName: "Email",
-      fieldValue: "aldhaftims06@gmail.com",
-    },
-    {
-      fieldName: "Freelance",
-      fieldValue: "Available",
-    },
-    {
-      fieldName: "Languages",
-      fieldValue: "Indonesia(native), English(intermediate)",
-    },
+    {fieldName: "Name", fieldValue: "Aldhaf Fadlilah"},
+    {fieldName: "Phone", fieldValue: "(+62) 877 7930 7421"},
+    {fieldName: "Experience", fieldValue: "1,5+ Years"},
+    {fieldName: "Address", fieldValue: "Bekasi, West Java"},
+    {fieldName: "Nationality", fieldValue: "Indonesia"},
+    {fieldName: "Email", fieldValue: "aldhaftims06@gmail.com"},
+    {fieldName: "Freelance", fieldValue: "Available"},
+    {fieldName: "Languages", fieldValue: "Indonesia(native), English(intermediate)"},
   ],
 };
 
@@ -59,7 +47,7 @@ const about = {
 const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
-  description: "",
+  description: "A blend of technical support, full-stack development, and data analysis roles.",
   items: [
     {
       company: "PT Kreasi Arduo Indonesia",
@@ -86,9 +74,9 @@ const education = {
   description: "",
   items: [
     {
-      institution: "SMA Negeri 10 Kota Bekasi",
-      degree: "Natural Sciences High School Graduate",
-      duration: "2017-2020",
+      institution: "Kampus Merdeka (MSIB)",
+      degree: "Certified Data Analyst",
+      duration: "Aug 2023 - Dec 2023",
     },
     {
       institution: "Universitas Yarsi",
@@ -103,46 +91,24 @@ const skills = {
   title: "My skills",
   description: "",
   skillList: [
-    {
-      icon: <FaHtml5 />,
-      name: "html 5",
-    },
-    {
-      icon: <FaCss3 />,
-      name: "css 3",
-    },
-    {
-      icon: <FaJs />,
-      name: "javascript",
-    },
-    {
-      icon: <FaReact />,
-      name: "react.js",
-    },
-    {
-      icon: <FaWordpress />,
-      name: "wordpress",
-    },
-    {
-      icon: <SiTailwindcss />,
-      name: "tailwind css",
-    },
-    {
-      icon: <FaJava />,
-      name: "java",
-    },
-    {
-      icon: <FaLaravel />,
-      name: "laravel",
-    },
-    {
-      icon: <FaPython />,
-      name: "python",
-    },
-    {
-      icon: <FaLinux />,
-      name: "linux",
-    },
+    // Frontend & Languages
+    { icon: <SiNextdotjs />, name: "Next.js" },
+    { icon: <FaReact />, name: "React.js" },
+    { icon: <FaLaravel />, name: "Laravel" },
+    { icon: <SiTypescript />, name: "TypeScript" },
+    { icon: <SiTailwindcss />, name: "Tailwind CSS" },
+    // Backend & CMS
+    { icon: <FaNodeJs />, name: "Node.js" },
+    { icon: <FaWordpress />, name: "WordPress" },
+    { icon: <SiOdoo />, name: "Odoo ERP" },
+    // Data & Database
+    { icon: <FaPython />, name: "Python" },
+    { icon: <SiMysql />, name: "MySQL / SQL" },
+    { icon: <SiTableau />, name: "Tableau" },
+    { icon: <SiGoogleappsscript />, name: "Apps Script" },
+    // DevOps & Tools
+    { icon: <FaLinux />, name: "Linux Admin" },
+    { icon: <SiDocker />, name: "Docker" },
   ],
 };
 
@@ -157,7 +123,6 @@ import {
 
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
-import { Item } from "@radix-ui/react-select";
 
 const Resume = () => {
   return (
