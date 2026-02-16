@@ -20,7 +20,8 @@ module.exports = {
       xl: "1200px",
     },
     fontFamily: {
-      primary: "var(--font-jetbrainsMono)",
+      primary: "var(--font-ibm-mono)", 
+      heading: "var(--font-ibm-sans)",      
     },
     extend: {
       colors: {

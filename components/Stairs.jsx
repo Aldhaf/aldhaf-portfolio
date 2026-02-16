@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-// variants
+// Variasi animasi
 const stairAnimation = {
   initial: {
     top: "0%",
@@ -13,21 +13,20 @@ const stairAnimation = {
   },
 };
 
-// calculate the reverse index for staggered delay
+// Menghitung delay secara mundur (Reverse Index)
+// Agar efeknya seperti tirai yang menutup/membuka bergelombang
 const reverseIndex = (index) => {
-  const totalSteps = 6; // number of step
+  const totalSteps = 12; // KITA TAMBAH JUMLAHNYA BIAR LEBIH HALUS
   return totalSteps - index - 1;
 };
 
 const Stairs = () => {
   return (
     <>
-      {/* render 6 motion divs, each representing a step of the stairs.
-  each div will have the same animation defined by the stairsAnimation object.
-  The delay for each div is calculated dinamically based on it's reversed index,
-  creating a staggered effect with decreasing delay for each subsequent step.
-  */}
-      {[...Array(6)].map((_, index) => {
+      {/* render 12 div (batang) alih-alih 6.
+        Semakin banyak div, semakin halus efek "scan"-nya.
+      */}
+      {[...Array(12)].map((_, index) => {
         return (
           <motion.div
             key={index}
@@ -36,11 +35,12 @@ const Stairs = () => {
             animate="animate"
             exit="exit"
             transition={{
-              duration: 0.4,
+              duration: 0.3, // Durasi lebih cepat per batang
               ease: "easeInOut",
-              delay: reverseIndex(index) * 0.1,
+              delay: reverseIndex(index) * 0.05, // Delay antar batang lebih rapat
             }}
-            className="h-full w-full bg-white relative"
+            className="h-full w-full bg-white relative" 
+            // Opsional: ganti bg-white dengan bg-accent jika ingin tirai berwarna
           />
         );
       })}
