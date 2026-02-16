@@ -25,7 +25,7 @@ const projects = [
     category: "Mobile App (2024)",
     title: "ArtuGo HR System",
     description:
-      "A comprehensive mobile HRIS application designed to streamline employee management at PT Kreasi Arduo Indonesia. Features include real-time GPS attendance tracking, leave request management, and secure digital payslip access. Integrated with a robust Laravel API backend to ensure seamless data synchronization between mobile users and the central database.",
+      "An enterprise-grade HRIS mobile app built with Flutter and GetX, fully integrated with Odoo ERP. Engineered with offline-first architecture, it features real-time GPS attendance validation, deep-linked FCM notifications, and environment management (Dev/Prod). Solved complex connectivity issues to ensure seamless data synchronization.",
     stack: [{ name: "Flutter" }, { name: "GetX" }, { name: "Python (Odoo)" }, { name: "Firebase" }],
     image: "/assets/work/thumb_artugo.png",
     live: "",
