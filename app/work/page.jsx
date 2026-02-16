@@ -22,7 +22,29 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "Fullstack (CMS)",
+    category: "Mobile App (2024)",
+    title: "ArtuGo HR System",
+    description:
+      "A comprehensive mobile HRIS application designed to streamline employee management at PT Kreasi Arduo Indonesia. Features include real-time GPS attendance tracking, leave request management, and secure digital payslip access. Integrated with a robust Laravel API backend to ensure seamless data synchronization between mobile users and the central database.",
+    stack: [{ name: "Flutter" }, { name: "GetX" }, { name: "Python (Odoo)" }, { name: "Firebase" }],
+    image: "/assets/work/thumb_artugo.png",
+    live: "",
+    github: "",
+  },
+  {
+    num: "02",
+    category: "ERP Module (2025)",
+    title: "ATG Helpdesk (Odoo)",
+    description:
+      "A custom-developed Odoo 12 module ('atg_helpdesk') engineered to modernize internal IT support ticketing. This module enables automated ticket routing, IT asset linking, and status tracking within the company's ERP ecosystem. Built using Python and XML, it significantly reduces issue resolution time by centralizing support requests.",
+    stack: [{ name: "Python" }, { name: "XML" }, { name: "PostgreSQL" }, { name: "Odoo" }],
+    image: "/assets/work/thumb_helpdesk.png", 
+    live: "",
+    github: "", 
+  },
+  {
+    num: "03",
+    category: "Fullstack CMS (2024)",
     title: "Huang He Consultancy",
     description:
       "A professional corporate website for a Singapore-based consultancy firm. Built entirely on WordPress to ensure easy content management for the client. Focused on SEO optimization, responsive design, and user-friendly navigation to increase client engagement.",
@@ -32,41 +54,8 @@ const projects = [
     github: "",
   },
   {
-    num: "02",
-    category: "Frontend Dev",
-    title: "CovInfo Portal",
-    description:
-      "A public health dashboard designed to track Covid-19 vaccination rates and educate users about health protocols. Features real-time data visualization and a clean, accessible UI. Engineered using Node.js backend and a responsive frontend architecture.",
-    stack: [{ name: "HTML5" }, { name: "CSS3" }, { name: "Node.js" }, { name: "SQL" }],
-    image: "/assets/work/thumb1.png",
-    live: "",
-    github: "https://github.com/Aldhaf/C04_website",
-  },
-  {
-    num: "03",
-    category: "Mobile App",
-    title: "HabitHero Tracker",
-    description:
-      "An Android-based productivity application to help users build and track daily habits. Integrated with Firebase for real-time data syncing, authentication, and Cloud Messaging for push notifications/reminders.",
-    stack: [{ name: "Kotlin" }, { name: "Firebase" }, { name: "Android Studio" }],
-    image: "/assets/work/thumb5.png",
-    live: "",
-    github: "https://github.com/Aldhaf/HabitHero",
-  },
-  {
     num: "04",
-    category: "Web Development",
-    title: "Adult Wellness Asia",
-    description:
-      "An event landing page for a large-scale exhibition in Singapore. developed using Dorik (No-code) to meet tight deadlines while maintaining a high-quality, elegant visual design. optimized for high traffic during ticket sales periods.",
-    stack: [{ name: "Dorik" }, { name: "UI/UX" }],
-    image: "/assets/work/thumb9.png",
-    live: "https://adultwellnessasia.com/",
-    github: "",
-  },
-  {
-    num: "05",
-    category: "Fullstack",
+    category: "Fullstack (2023)",
     title: "TendorNet Dashboard",
     description:
       "A comprehensive ISP management dashboard designed to manage customer data and billing. Built with a robust PHP REST API backend and a responsive Bootstrap frontend. Includes database management via MySQL.",
@@ -76,25 +65,58 @@ const projects = [
     github: "https://github.com/Aldhaf/TendorNet-Project",
   },
   {
-    num: "06",
-    category: "frontend",
-    title: "project 7",
+    num: "05",
+    category: "Frontend Dev (2023)",
+    title: "Defence Collective SG",
     description:
-      "Defence Collective Singapore is a defence-inspired museum collective that pays homage to Singapore's resolve and determination, and the journey that has brought the nation to where it is today. This application is a collaboration between Huang He Group and Defence Collective Singapore. Created with the aim of making it easier for users to access or visit this place, such as buying tickets or just seeing the DCS activity schedule, with the work of about 5 months and till now it is still under development, my job in making this application is to fill in the content from what has been provided by the client to Wordpress and visualise it to make it look beautiful.",
-    stack: [{ name: "Wordpress" }],
+      "A digital gateway for Singapore's defence museum collective, designed to streamline ticket bookings and visitor schedules. Over a 5-month period, I managed the end-to-end content integration and visual structuring on WordPress, transforming client resources into an engaging interface.",
+    stack: [{ name: "WordPress" }, { name: "UI Design" }],
     image: "/assets/work/thumb7.png",
     live: "https://apps.apple.com/id/app/mydcs/id6470789751",
     github: "",
   },
   {
-    num: "07",
-    category: "frontend",
-    title: "project 8",
+    num: "06",
+    category: "Web Dev (2024)",
+    title: "Legatcy Recruitment",
     description:
-      "Legatcy Recruitment is a recruitment service provider that goes above and beyond to become a trusted and long-term talent partner for your organization. This website was created 100% with Wordpress with the aim that users who are looking for employees can easily reach this website, therefore an individual website was created for Legatcy Recruitment with less than 1 month of work and reference research from many sources.",
-    stack: [{ name: "Wordpress" }],
+      "A dedicated corporate portal for a recruitment agency, built to connect employers with talent efficiently. Developed on WordPress with a focus on rapid deployment and high availability, ensuring a professional online presence was established within a tight timeline.",
+    stack: [{ name: "WordPress" }, { name: "SEO" }],
     image: "/assets/work/thumb8.png",
     live: "https://legatcyrecruitment.com",
+    github: "",
+  },
+  {
+    num: "07",
+    category: "Frontend Dev (2023)",
+    title: "CovInfo Portal",
+    description:
+      "A public health dashboard designed to track Covid-19 vaccination rates and educate users about health protocols. Features real-time data visualization and a clean, accessible UI. Engineered using Node.js backend and a responsive frontend architecture.",
+    stack: [{ name: "HTML5" }, { name: "CSS3" }, { name: "Node.js" }, { name: "SQL" }],
+    image: "/assets/work/thumb1.png",
+    live: "",
+    github: "https://github.com/Aldhaf/C04_website",
+  },
+  {
+    num: "08",
+    category: "Mobile App (2023)",
+    title: "HabitHero Tracker",
+    description:
+      "An Android-based productivity application to help users build and track daily habits. Integrated with Firebase for real-time data syncing, authentication, and Cloud Messaging for push notifications/reminders.",
+    stack: [{ name: "Kotlin" }, { name: "Firebase" }, { name: "Android Studio" }],
+    image: "/assets/work/thumb5.png",
+    live: "",
+    github: "https://github.com/Aldhaf/HabitHero",
+  },
+  {
+    num: "09",
+    category: "No-Code Dev (2024)",
+    title: "Adult Wellness Asia",
+    description:
+      "An event landing page for a large-scale exhibition in Singapore. Developed using Dorik to meet tight deadlines while maintaining a high-quality, elegant visual design. Optimized for high traffic handling during ticket sales periods.",
+    stack: [{ name: "Dorik" }, { name: "UI/UX" }],
+    image: "/assets/work/thumb9.png",
+    live: "https://adultwellnessasia.com/",
     github: "",
   },
 ];
