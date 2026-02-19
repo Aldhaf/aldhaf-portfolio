@@ -11,48 +11,45 @@ import {
   FaPython,
   FaLinux,
   FaNodeJs,
-  FaDatabase, // General DB icon
 } from "react-icons/fa";
 
-import { 
-  SiTailwindcss, 
-  SiNextdotjs, 
-  SiTypescript, 
-  SiMysql, 
-  SiTableau, 
-  SiOdoo, 
-  SiGooglelookerstudio,
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiTypescript,
+  SiMysql,
+  SiTableau,
+  SiOdoo,
   SiGoogleappsscript,
-  SiDocker 
+  SiDocker,
 } from "react-icons/si";
 
-//about data
+// About Data (Bento Grid Version)
 const about = {
   title: "About Me",
   description:
-    "Informatics Engineering graduate with a GPA of 3.84 and over 1.5 years of professional experience. I bridge the gap between robust IT operations and modern software development, building scalable web apps while ensuring the infrastructure behind them runs seamlessly.",
+    "Informatics Engineering graduate bridging the gap between robust IT operations and modern software development. I build scalable applications while ensuring infrastructure reliability.",
   info: [
-    {fieldName: "Name", fieldValue: "Aldhaf Fadlilah"},
-    {fieldName: "Phone", fieldValue: "(+62) 877 7930 7421"},
-    {fieldName: "Experience", fieldValue: "1,5+ Years"},
-    {fieldName: "Address", fieldValue: "Bekasi, West Java"},
-    {fieldName: "Nationality", fieldValue: "Indonesia"},
-    {fieldName: "Email", fieldValue: "aldhaftims06@gmail.com"},
-    {fieldName: "Freelance", fieldValue: "Available"},
-    {fieldName: "Languages", fieldValue: "Indonesia(native), English(intermediate)"},
+    { fieldName: "Name", fieldValue: "Aldhaf Fadlilah" },
+    { fieldName: "Phone", fieldValue: "(+62) 877 7930 7421" },
+    { fieldName: "Experience", fieldValue: "1.5+ Years (Pro)" },
+    { fieldName: "Nationality", fieldValue: "Indonesia" },
+    { fieldName: "Email", fieldValue: "aldhaftims06@gmail.com" },
+    { fieldName: "Freelance", fieldValue: "Available" },
+    { fieldName: "Languages", fieldValue: "Indonesian, English" },
   ],
 };
 
-// experience data
+// Experience Data
 const experience = {
   icon: "/assets/resume/badge.svg",
-  title: "My experience",
+  title: "My Experience",
   description: "A blend of technical support, full-stack development, and data analysis roles.",
   items: [
     {
-      company: "PT Kreasi Arduo Indonesia",
-      position: "IT Support Specialist",
-      duration: "Aug 2024 - Present",
+      company: "PT Kreasi Arduo Indonesia (ARTUGO)",
+      position: "IT Support Specialist & Web Dev",
+      duration: "Sep 2024 - Present",
     },
     {
       company: "Huang He Consultancy Group",
@@ -60,67 +57,56 @@ const experience = {
       duration: "Aug 2023 - Aug 2024",
     },
     {
-      company: "PT GITS Indonesia",
-      position: "IT Data Analyst (Indep. Study)",
+      company: "PT GITS Indonesia (MSIB)",
+      position: "Data Analyst (Indep. Study)",
       duration: "Aug 2023 - Dec 2023",
     },
   ],
 };
 
-// education data
+// Education Data
 const education = {
   icon: "/assets/resume/cap.svg",
-  title: "My education",
-  description: "",
+  title: "My Education",
+  description: "Focused on Software Engineering, Data Science, and continuous learning.",
   items: [
+    {
+      institution: "Universitas YARSI",
+      degree: "Bachelor of Informatics Engineering",
+      duration: "2020 - 2024",
+    },
     {
       institution: "Kampus Merdeka (MSIB)",
       degree: "Certified Data Analyst",
       duration: "Aug 2023 - Dec 2023",
     },
-    {
-      institution: "Universitas Yarsi",
-      degree: "Bachelor of Informatics Engineering Graduate",
-      duration: "2020-2024",
-    },
   ],
 };
 
-// skills data
+// Skills Data
 const skills = {
-  title: "My skills",
-  description: "",
+  title: "My Skills",
+  description: "A comprehensive toolkit covering Fullstack Dev, Data Analytics, and IT Ops.",
   skillList: [
-    // Frontend & Languages
     { icon: <SiNextdotjs />, name: "Next.js" },
     { icon: <FaReact />, name: "React.js" },
     { icon: <FaLaravel />, name: "Laravel" },
     { icon: <SiTypescript />, name: "TypeScript" },
     { icon: <SiTailwindcss />, name: "Tailwind CSS" },
-    // Backend & CMS
     { icon: <FaNodeJs />, name: "Node.js" },
     { icon: <FaWordpress />, name: "WordPress" },
     { icon: <SiOdoo />, name: "Odoo ERP" },
-    // Data & Database
     { icon: <FaPython />, name: "Python" },
     { icon: <SiMysql />, name: "MySQL / SQL" },
     { icon: <SiTableau />, name: "Tableau" },
     { icon: <SiGoogleappsscript />, name: "Apps Script" },
-    // DevOps & Tools
     { icon: <FaLinux />, name: "Linux Admin" },
     { icon: <SiDocker />, name: "Docker" },
   ],
 };
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
-
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
 
@@ -146,31 +132,38 @@ const Resume = () => {
             <TabsTrigger value="about">About me</TabsTrigger>
           </TabsList>
 
-          {/* content */}
+          {/* Content Area */}
           <div className="min-h-[70vh] w-full">
-            {/* experience */}
+            
+            {/* EXPERIENCE TAB */}
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold ">{experience.title}</h3>
+                <h3 className="text-4xl font-bold font-heading">{experience.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {experience.description}
                 </p>
-                <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                <ScrollArea className="h-[480px]">
+                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-6 pr-4">
                     {experience.items.map((item, index) => {
                       return (
                         <li
                           key={index}
-                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                          className="bg-[#232329] p-6 rounded-xl border border-white/10 hover:border-accent transition-all duration-300 group flex flex-col justify-between"
                         >
-                          <span className="text-accent ">{item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+                          {/* Terminal Header */}
+                          <div className="flex gap-2 mb-4">
+                            <span className="w-3 h-3 rounded-full bg-[#ff605c] group-hover:bg-[#ff605c]/80 transition-colors" />
+                            <span className="w-3 h-3 rounded-full bg-[#ffbd44] group-hover:bg-[#ffbd44]/80 transition-colors" />
+                            <span className="w-3 h-3 rounded-full bg-[#00ca4e] group-hover:bg-[#00ca4e]/80 transition-colors" />
+                          </div>
+                          
+                          <span className="text-accent font-primary mb-2">{item.duration}</span>
+                          <h3 className="text-xl font-bold font-heading min-h-[50px]">
                             {item.position}
                           </h3>
-                          <div className="flex items-center gap-3 ">
-                            {/* dot */}
+                          <div className="flex items-center gap-3 mt-auto pt-4 border-t border-white/5">
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="text-white/60">{item.company}</p>
+                            <p className="text-white/60 text-sm">{item.company}</p>
                           </div>
                         </li>
                       );
@@ -180,29 +173,35 @@ const Resume = () => {
               </div>
             </TabsContent>
 
-            {/* education */}
+            {/* EDUCATION TAB */}
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold ">{education.title}</h3>
+                <h3 className="text-4xl font-bold font-heading">{education.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {education.description}
                 </p>
-                <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                <ScrollArea className="h-[480px]">
+                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-6 pr-4">
                     {education.items.map((item, index) => {
                       return (
                         <li
                           key={index}
-                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                          className="bg-[#232329] p-6 rounded-xl border border-white/10 hover:border-accent transition-all duration-300 group flex flex-col justify-between"
                         >
-                          <span className="text-accent ">{item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+                          {/* Terminal Header */}
+                          <div className="flex gap-2 mb-4">
+                            <span className="w-3 h-3 rounded-full bg-[#ff605c] group-hover:bg-[#ff605c]/80" />
+                            <span className="w-3 h-3 rounded-full bg-[#ffbd44] group-hover:bg-[#ffbd44]/80" />
+                            <span className="w-3 h-3 rounded-full bg-[#00ca4e] group-hover:bg-[#00ca4e]/80" />
+                          </div>
+
+                          <span className="text-accent font-primary mb-2">{item.duration}</span>
+                          <h3 className="text-xl font-bold font-heading min-h-[50px]">
                             {item.degree}
                           </h3>
-                          <div className="flex items-center gap-3 ">
-                            {/* dot */}
+                          <div className="flex items-center gap-3 mt-auto pt-4 border-t border-white/5">
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="text-white/60">{item.institution}</p>
+                            <p className="text-white/60 text-sm">{item.institution}</p>
                           </div>
                         </li>
                       );
@@ -212,63 +211,70 @@ const Resume = () => {
               </div>
             </TabsContent>
 
-            {/* skills */}
+            {/* SKILLS TAB */}
             <TabsContent value="skills" className="w-full h-full">
               <div className="flex flex-col gap-[30px] h-[548px]">
                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                  <h3 className="text-4xl font-bold ">{skills.title}</h3>
+                  <h3 className="text-4xl font-bold font-heading">{skills.title}</h3>
                   <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                     {skills.description}
                   </p>
                 </div>
-                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
-                  {skills.skillList.map((skill, index) => {
-                    return (
-                      <li key={index}>
-                        <TooltipProvider delayDuration={100}>
-                          <Tooltip>
-                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                              <div className="text-6xl group-hover:text-accent transition-all duration-300">
-                                {skill.icon}
-                              </div>
-                            </TooltipTrigger>
-                            <TooltipContent>
-                              <p className="capitalize">{skill.name}</p>
-                            </TooltipContent>
-                          </Tooltip>
-                        </TooltipProvider>
-                      </li>
-                    );
-                  })}
-                </ul>
+                <ScrollArea className="h-[400px]">
+                  <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-4 pr-4">
+                    {skills.skillList.map((skill, index) => {
+                      return (
+                        <li key={index}>
+                          <TooltipProvider delayDuration={100}>
+                            <Tooltip>
+                              <TooltipTrigger className="w-full h-[120px] bg-[#232329] rounded-xl flex justify-center items-center border border-white/5 hover:border-accent transition-all duration-300 group hover:shadow-[0_0_20px_rgba(37,208,255,0.2)]">
+                                <div className="text-5xl group-hover:scale-110 group-hover:text-accent transition-all duration-300">
+                                  {skill.icon}
+                                </div>
+                              </TooltipTrigger>
+                              <TooltipContent>
+                                <p className="capitalize font-primary">{skill.name}</p>
+                              </TooltipContent>
+                            </Tooltip>
+                          </TooltipProvider>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </ScrollArea>
               </div>
             </TabsContent>
 
-            {/* about me */}
-            <TabsContent
-              value="about"
-              className="w-full text-center xl:text-left"
-            >
+            {/* ABOUT ME TAB (Bento Grid) */}
+            <TabsContent value="about" className="w-full text-center xl:text-left">
               <div className="flex flex-col gap-[30px] h-[548px]">
-                <h3 className="text-4xl font-bold">{about.title}</h3>
+                <h3 className="text-4xl font-bold font-heading">{about.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {about.description}
                 </p>
-                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
-                  {about.info.map((item, index) => {
-                    return (
-                      <li
-                        key={index}
-                        className="flex items-center justify-center xl:justify-start gap-4"
-                      >
-                        <span className="text-white/60">{item.fieldName}</span>
-                        <span className="text-xl">{item.fieldValue}</span>
-                      </li>
-                    );
-                  })}
-                </ul>
+                <ScrollArea className="h-[400px]">
+                  {/* Grid Bento Style untuk About Me */}
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 pr-4">
+                    {about.info.map((item, index) => {
+                      return (
+                        <li
+                          key={index}
+                          className="bg-[#232329] p-4 rounded-xl border border-white/5 hover:border-accent/50 transition-all flex flex-col justify-center gap-1"
+                        >
+                          <span className="text-white/50 text-sm uppercase tracking-wider font-primary">
+                            {item.fieldName}
+                          </span>
+                          <span className="text-lg font-bold text-white">
+                            {item.fieldValue}
+                          </span>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </ScrollArea>
               </div>
             </TabsContent>
+            
           </div>
         </Tabs>
       </div>
